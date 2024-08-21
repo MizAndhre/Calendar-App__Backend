@@ -66,7 +66,7 @@ const loginUser = async (req, res = response) => {
 
 		//generate a JWT
 
-		return res.status(201).json({
+		return res.json({
 			ok: true,
 			uid: user.id,
 			name: user.name,
