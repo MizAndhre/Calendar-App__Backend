@@ -86,6 +86,8 @@ const revalidateToken = (req, res = response) => {
 	res.json({
 		ok: true,
 		token: generateJWT(uid, name),
+		uid,
+		name,
 	});
 };
 
