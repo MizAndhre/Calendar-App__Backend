@@ -33,7 +33,7 @@ router.post(
 		//middlewares
 		check('title', 'El título es obligatorio').not().isEmpty(),
 		check('start', 'Fecha de inicio es obligatoria').custom(isDate),
-		check('end', 'Fecha de inicio es obligatoria').custom(isDate),
+		check('end', 'Fecha de fin es obligatoria').custom(isDate),
 		validateFields,
 	],
 	createEvent
